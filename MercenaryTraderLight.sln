@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MercenaryTraderLight", "MercenaryTraderLight.csproj", "{D0690292-2BBC-4F71-8959-F5EB094B2E86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0690292-2BBC-4F71-8959-F5EB094B2E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0690292-2BBC-4F71-8959-F5EB094B2E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0690292-2BBC-4F71-8959-F5EB094B2E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0690292-2BBC-4F71-8959-F5EB094B2E86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AE9E6D8-F886-459C-B086-FFFE7327451A}
+	EndGlobalSection
+EndGlobal
