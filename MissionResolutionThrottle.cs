@@ -12,7 +12,7 @@ namespace MercenaryTrader
 {
     [HarmonyPatch(typeof(MissionSystem), "Update")]
     public static class MissionResolutionThrottle {
-        public static Boolean Prefix(Missions missions, Stations stations, News news, SpaceTime spaceTime, PopulationDebugData populationDebugData, TravelMetadata travelMetadata, Factions factions, ItemsPrices itemsPrices, Difficulty difficulty)
+        public static Boolean Prefix(Missions missions, Stations stations, News news, SpaceTime spaceTime, PopulationDebugData populationDebugData, TravelMetadata travelMetadata, Factions factions, ItemsPrices itemsPrices, MagnumProgression magnumProgression, Difficulty difficulty)
         {
             Dictionary<string, float> controlMap = new Dictionary<string, float>();
             int num = missions.Values.Count - 1;
@@ -45,7 +45,7 @@ namespace MercenaryTrader
                         {
                             ProcMissionRecord procMissionRecord = Data.ProcMissions.Get(mission.ProcMissionType);
                             newsEvent.NewsType = procMissionRecord.NewsTypeEndGood;
-                            MissionSystem.ProcessMissionSuccessActions(stations, spaceTime, populationDebugData, travelMetadata, factions, itemsPrices, difficulty, mission);
+                            MissionSystem.ProcessMissionSuccessActions(stations, spaceTime, populationDebugData, travelMetadata, factions, itemsPrices, magnumProgression, difficulty, mission);
                         }
                         else
                         {
